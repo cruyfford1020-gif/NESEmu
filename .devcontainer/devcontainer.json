@@ -1,0 +1,13 @@
+{
+  "name": "PS1 BIN Builder",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "bash .devcontainer/bootstrap.sh",
+  "postStartCommand": "bash .devcontainer/start-web.sh",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "PS1 BIN Builder",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
